@@ -75,7 +75,7 @@ LC_2020_cum <-  ggplot(data=daily_rain_2020, aes(x = date, y = cumsum(daily_rain
       #scale_y_continuous(limits = c(0,300))
 LC_2020_cum
 
-ggsave("LCBS_2020_cumulative_rain.png", width = 7, height = 5)
+ggsave("figures/LCBS_2020_cumulative_rain.png", width = 7, height = 5)
 ```
 
 
