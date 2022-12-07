@@ -27,6 +27,7 @@ Manufacturer:	Campbell Scientific
 ## Loma Linda 
 
 -  Some weather data from Loma Linda are archived on the OTS website.
+-  In this repo they are here: https://github.com/fjoyce/LC-weather/tree/main/data/Loma%20Linda   
 -  Meteorological Station: Lomalinda
 -  Location: 8° 44' 18.60'' N, 82° 55' 21.78'' W
 -  Description: Manual rainfall and temperature data
