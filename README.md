@@ -25,7 +25,7 @@ Manufacturer:	Campbell Scientific
 - Since February 2021 I have periodically downloaded data from https://bixa.tropicalstudies.org/meteoro/default.php?pestacion=1, usually in monthly batches.
     - 2020: batches are in Las_Cruces_2020 subfolder; combined data are in LC_weather_2020.csv 
     - 2021: batches are in 2021 subfolder; combined data are in LC_weather_2021.csv
-    - 2022: batches in 2022 subfolder; combined data are in LC_weather_2020.csv (within that subfolder)
+    - 2022: batches in 2022 subfolder; combined data are in LC_Weather_2022.csv (within that subfolder)
 
 ## Missing data  
 
