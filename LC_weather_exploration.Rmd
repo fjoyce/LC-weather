@@ -16,7 +16,7 @@ library(ggplot2)
 ```
 
 ```{r}
-LC_weather_2020 <- read.csv("LC_weather_2020.csv")
+LC_weather_2020 <- read.csv("data/LC_weather_2020.csv")
 
 LC_weather_2020 <- LC_weather_2020 %>% 
   mutate(date_time = mdy_hm(Date_time)) %>% 
