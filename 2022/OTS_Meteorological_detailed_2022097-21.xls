@@ -1,0 +1,2579 @@
+<html>
+<head>
+<meta content="text/html; charset=windows-1252" http-equiv="content-type">
+<title>Meteorología - OET</title>
+<meta content="1800" http-equiv="Refresh">
+<meta name="GENERATOR" content="CodeCharge Studio 3.1.1.0">
+</head>
+<body>
+<p><a href="" id="ToExcelLink"><font size="1">Export to .XLS</font></a></p>
+
+<table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td style="WIDTH: 20px" nowrap></td> 
+        <td valign="top">
+            <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <th><font size="1">Detailed view&nbsp;from&nbsp;OTS - Las Cruces&nbsp;station&nbsp;&nbsp;</font></th>
+                </tr>
+ 
+                <tr>
+                    <th align="left"><font size="1">*&nbsp;&nbsp;&nbsp;&nbsp;photosynthetically&nbsp;<br>
+                    **&nbsp;&nbsp;Standard&nbsp;deviation&nbsp;<br>
+                    ***&nbsp;Radiation&nbsp;</font> </th>
+                </tr>
+            </table>
+ 
+            <table cellspacing="0" cellpadding="0">
+                <tr>
+                    <th nowrap><font size="1">
+                    <center>
+                    Date and time of measurement 
+                    </center>
+                    </font></th>
+ 
+                    <center>
+                    </center>
+ 
+                    <th nowrap><font size="1">
+                    <center>
+                    Air Temp 
+                    </center>
+                    </font></th>
+ 
+                    <th nowrap><font size="1">
+                    <center>
+                    Max Air Temp 
+                    </center>
+                    </font></th>
+ 
+                    <th nowrap><font size="1">
+                    <center>
+                    Min Air Temp 
+                    </center>
+                    </font></th>
+ 
+                    <th nowrap><font size="1">
+                    <center>
+                    Relative Humidity 
+                    </center>
+                    </font></th>
+ 
+                    <th nowrap><font size="1">
+                    <center>
+                    Rainfall 
+                    </center>
+                    </font></th>
+ 
+                    <th nowrap><font size="1">
+                    <center>
+                    Scalar mean hr. wind speed 
+                    </center>
+                    </font></th>
+ 
+                    <th nowrap><font size="1">
+                    <center>
+                    Mean hr. wind speed 
+                    </center>
+                    </font></th>
+ 
+                    <th nowrap><font size="1">
+                    <center>
+                    Average wind direction 
+                    </center>
+                    </font></th>
+ 
+                    <th nowrap><font size="1">
+                    <center>
+                    Sd ** wind direction</a> 
+                    </center>
+                    </font></th>
+ 
+                    <th nowrap><font size="1">
+                    <center>
+                    Barometric pressure 
+                    </center>
+                    </font></th>
+ 
+                    <th nowrap><font size="1">
+                    <center>
+                    Solar Rad*** 
+                    </center>
+                    </font></th>
+ 
+                    <th nowrap><font size="1">
+                    <center>
+                    Max solar Rad*** 
+                    </center>
+                    </font></th>
+ 
+                    <th nowrap><font size="1">
+                    <center>
+                    Min solar Rad*** 
+                    </center>
+                    </font></th>
+ 
+                    <th nowrap><font size="1">
+                    <center>
+                    Sd** solar Rad*** 
+                    </center>
+                    </font></th>
+ 
+                    <th nowrap><font size="1">
+                    <center>
+                    Average ps* active Rad*** 
+                    </center>
+                    </font></th>
+ 
+                    <th nowrap><font size="1">
+                    <center>
+                    Max ps* active Rad*** 
+                    </center>
+                    </font></th>
+ 
+                    <th nowrap><font size="1">
+                    <center>
+                    Min ps* active Rad*** 
+                    </center>
+                    </font></th>
+ 
+                    <th nowrap><font size="1">
+                    <center>
+                    Std** ps* active Rad*** 
+                    </center>
+                    </font></th>
+ 
+                    <th nowrap><font size="1">
+                    <center>
+                    Leaf WT Dry 
+                    </center>
+                    </font></th>
+ 
+                    <th nowrap><font size="1">
+                    <center>
+                    Leaf WT Wet 
+                    </center>
+                    </font></th>
+ 
+                    <th nowrap><font size="1">
+                    <center>
+                    Leaf WT Cont 
+                    </center>
+                    </font></th>
+                </tr>
+ 
+                
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 23:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.16</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.21</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.12</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.725</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.529</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">314.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.46</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">897.7671</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.01</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.060</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.280</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.063</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 23:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.24</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.17</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.254</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.669</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.450</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">315.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">23.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">897.9771</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.01</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.059</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.245</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.065</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 23:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.27</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.32</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.23</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.285</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.121</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">314.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.18</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">898.0127</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.05</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.063</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.315</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.070</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 23:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.32</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.35</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.24</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.536</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.355</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">315.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">898.1319</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.01</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.054</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.245</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.060</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 22:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.29</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.33</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.24</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.589</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.405</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">313.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.89</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">898.2913</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.05</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.01</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.060</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.280</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.071</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 22:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.35</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.24</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.508</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.339</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.170</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">317.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.46</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">898.3306</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.01</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.059</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.280</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.067</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 22:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.38</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.53</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.22</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.529</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.229</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">320.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">27.62</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">898.6257</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.01</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.059</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.245</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.062</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 22:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.58</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.66</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.48</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.508</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.257</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.995</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">316.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">27.65</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">898.6585</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.060</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.280</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.069</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 21:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.68</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.73</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.254</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.994</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.825</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">320.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">23.77</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">898.4706</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.067</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.245</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.066</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 21:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.77</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.82</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.69</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.762</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.947</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.795</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">318.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">22.46</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">898.454</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.067</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.315</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.070</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 21:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.78</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.82</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.73</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.254</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.629</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.516</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">316.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.68</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">898.182</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.060</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.280</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.067</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 21:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.73</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.67</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.762</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.381</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.287</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">317.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">22.41</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">898.0846</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.051</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.210</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.056</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 20:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.61</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.69</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.54</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.016</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.412</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.325</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">321.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.81</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">897.9861</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.047</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.210</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.056</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 20:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.53</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.58</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.48</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.016</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.608</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.512</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">308.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">897.7981</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.053</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.245</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.060</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 20:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.57</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.76</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.43</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">7.112</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.059</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.057</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">320.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.35</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">897.5267</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.062</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.280</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.064</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 20:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.82</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.87</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.76</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">4.826</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.114</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.038</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">83.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.39</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">898.004</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.062</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.280</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.064</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 19:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.79</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.83</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.76</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.032</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.342</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.333</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">298.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">8.29</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">897.3387</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.055</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.280</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.064</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 19:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.81</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.85</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.76</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.540</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.227</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.170</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">301.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">16.74</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">896.9767</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.068</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.315</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.071</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 19:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.82</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.88</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.79</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.540</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.104</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.042</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">303.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.55</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">896.616</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.055</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.350</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.063</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 19:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.84</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.79</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.286</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.108</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.030</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">309.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.05</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">896.3873</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.054</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.245</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.061</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 18:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.86</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.92</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.81</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">6.858</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.560</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.515</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">305.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">13.26</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">896.1135</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.046</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.350</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.058</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 18:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.94</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.01</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.86</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">13.720</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.368</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.316</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">293.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">14.55</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">896.1508</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.052</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.245</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.059</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 18:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.07</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.97</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">6.096</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.171</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.084</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">301.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.28</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">896.0567</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.069</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.280</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.064</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 18:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.08</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.11</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.02</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.763</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.694</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">319.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">22.14</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.6473</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.08</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.54</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.719</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.344</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.589</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 17:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.03</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.11</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.94</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.918</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.854</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">294.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">22.13</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.5011</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.21</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">3.91</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.49</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.04</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">6.616</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">11.650</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.134</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">3.033</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 17:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.03</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.13</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.94</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">96.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.254</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.985</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.913</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">266.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.24</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.2654</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">4.87</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">6.52</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">3.91</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.79</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">14.390</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.790</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">11.550</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.081</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 17:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.21</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.33</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.09</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">96.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.839</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.762</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">263.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">22.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.2112</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">8.51</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">10.58</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">6.43</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">25.320</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">32.400</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.650</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">4.751</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 17:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.41</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.56</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.29</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">96.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.254</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.724</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.670</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">243.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.52</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.025</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">9.45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">13.59</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">7.61</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.07</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">28.590</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">39.680</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">22.460</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">3.102</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 16:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.56</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.63</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.51</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">96.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.254</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.899</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.743</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">164.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">31.16</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.8815</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.03</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">29.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">13.64</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">5.22</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">60.970</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">88.100</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">39.710</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.640</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 16:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.55</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.71</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">96.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.254</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.864</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.733</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">147.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">27.66</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.656</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.87</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">26.49</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.57</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.76</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">66.350</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">77.290</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">59.410</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">4.140</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 16:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.51</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.65</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">96.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.270</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.811</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.663</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">170.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">32.66</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.5641</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.19</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">22.04</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.98</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.67</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">67.440</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">74.320</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">63.890</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.763</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 16:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.78</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.61</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">95.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.032</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.461</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.394</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">148.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.42</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.642</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.17</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">24.96</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">16.21</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.66</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">64.210</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">81.800</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">54.300</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">8.500</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 15:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.78</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.61</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">95.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.766</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.642</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">163.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">31.93</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.4539</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.48</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">27.38</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">16.11</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">3.12</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">69.130</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">90.200</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">56.160</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">9.610</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 15:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.56</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.68</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.44</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">96.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.925</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.718</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">193.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.91</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.3093</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">25.64</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">29.21</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.57</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">81.300</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">94.100</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">65.150</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">8.870</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 15:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.62</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.79</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.46</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">95.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.714</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.612</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">231.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.46</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.2108</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">56.86</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">75.06</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">27.87</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">12.87</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">171.500</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">224.900</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">86.400</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">37.700</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 15:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.98</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.17</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.77</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">95.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.281</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.166</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">247.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">22.96</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.1429</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">71.59</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">95.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">58.01</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">10.55</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">209.500</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">270.800</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">170.800</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">28.870</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 14:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.98</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.17</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.86</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">95.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.430</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.263</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">229.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">26.61</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.0775</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">85.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">122.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">49.86</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">27.77</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">246.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">344.800</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">146.800</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">76.300</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">13.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.10</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 14:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.69</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.17</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">92.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.541</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.363</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">231.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.2294</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">95.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">162.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">51.59</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">34.08</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">260.300</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">431.800</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">151.500</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">85.600</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">13.25</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.75</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 14:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.88</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.78</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">89.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.237</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.114</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">230.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.01</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.8296</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">179.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">573.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">114.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">107.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">471.600</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1461.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">324.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">249.800</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">9.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">3.95</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.25</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 14:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.37</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.78</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.07</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">87.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.948</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.783</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">228.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">22.67</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.9584</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">450.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">819.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">183.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">224.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1130.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2015.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">480.200</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">539.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 13:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.22</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.82</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.79</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">88.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.027</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.896</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">230.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.97</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.0381</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">485.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">903.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">214.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">191.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1187.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2175.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">548.600</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">454.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 13:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.58</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.94</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.09</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">89.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.528</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.436</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">232.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.42</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.1628</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">453.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">728.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">292.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">123.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1107.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1730.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">727.300</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">277.700</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 13:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.87</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.44</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.35</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">88.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.484</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.373</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">228.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">22.06</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.1042</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">259.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">494.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">200.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">43.71</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">657.600</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1312.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">506.500</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">106.900</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 13:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.16</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.83</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.84</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">87.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.034</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.853</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">221.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">28.61</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.1348</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">222.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">285.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">173.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">28.33</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">562.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">704.700</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">443.900</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">67.510</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 12:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.47</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.17</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">85.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.541</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.315</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">215.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">45.76</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.3456</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">306.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">432.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">260.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">39.69</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">755.900</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1043.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">651.100</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">84.500</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 12:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.54</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">22.35</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.13</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">84.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.649</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.267</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">169.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">56.14</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.3705</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">168.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">290.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">116.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">59.07</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">425.500</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">705.300</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">302.900</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">138.700</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 12:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">22.12</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">22.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.85</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">81.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.236</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.024</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">165.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">22.66</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.3505</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">299.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">496.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">146.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">86.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">772.800</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1615.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">373.100</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">257.800</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 12:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.91</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">22.49</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.71</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">81.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.529</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.398</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">178.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">24.58</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.722</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">235.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">408.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">170.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">47.11</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">595.900</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1183.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">443.300</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">118.800</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 11:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">22.57</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">23.08</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">22.22</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">81.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.697</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.467</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">162.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">29.27</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">896.5948</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">289.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">493.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">213.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">73.22</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">775.600</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2190.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">531.600</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">354.300</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 11:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">23.11</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">23.92</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">22.53</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">79.36</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.674</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.470</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">155.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">26.41</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">897.4255</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">508.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1098.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">264.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">222.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1207.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2408.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">665.100</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">466.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 11:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">23.62</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">24.03</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">23.14</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">79.28</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.471</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.241</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">155.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">30.21</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">898.1347</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">853.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1136.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">362.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">216.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1902.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2544.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">854.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">456.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 11:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">23.59</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">24.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">23.23</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">79.95</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.514</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.360</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">148.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">26.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">898.5783</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">568.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1171.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">353.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">246.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1139.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1860.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">867.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">240.500</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 10:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">23.06</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">23.78</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">22.66</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">82.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.757</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.561</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">155.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">26.97</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">898.0206</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">743.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1172.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">347.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">279.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1399.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2030.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">893.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">348.800</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 10:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">22.39</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">23.03</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.33</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">87.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.529</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.293</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">150.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">26.71</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">897.1537</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">706.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1004.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">355.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">174.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1631.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2330.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">893.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">392.400</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 10:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.11</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.35</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.83</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">90.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.735</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.571</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">147.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">32.74</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">896.8477</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">235.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">540.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">160.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">80.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">589.600</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1356.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">406.500</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">205.600</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 10:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.63</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.89</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.41</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">93.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.654</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.156</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">219.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">34.01</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">896.8906</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">280.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">821.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">75.69</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">223.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">688.600</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2124.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">182.200</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">552.800</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 09:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.51</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.98</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.16</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">94.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.865</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.615</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">168.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">35.19</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">896.975</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">296.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">869.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">73.07</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">142.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">729.900</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2072.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">187.400</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">336.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 09:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.22</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">95.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.022</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.909</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">132.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">26.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">897.3809</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">213.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">524.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">63.44</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">114.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">533.400</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1369.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">159.300</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">280.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 09:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.49</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.422</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.344</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">122.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">27.18</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">896.8629</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">399.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">720.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">248.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">125.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1001.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1763.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">646.900</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">297.200</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 09:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.24</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.92</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.480</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.450</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">130.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">26.43</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">896.745</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">256.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">407.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">180.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">43.44</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">679.700</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1068.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">486.300</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">111.700</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 08:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.96</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.264</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.225</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">108.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">23.64</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">896.7477</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">219.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">504.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">156.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">67.47</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">560.300</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1290.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">408.200</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">161.500</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 08:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.96</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.52</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.860</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.804</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">126.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.69</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">896.4894</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">181.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">302.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">117.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">52.71</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">464.800</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">769.900</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">305.900</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">134.100</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">8.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">5.35</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.85</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 08:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.61</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.07</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.17</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.707</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.661</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">119.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.42</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">896.5377</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">151.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">178.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">124.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.05</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">386.600</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">450.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">322.400</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">46.360</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">12.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.50</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 08:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.29</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.17</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.093</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.085</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">58.27</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">5.42</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">896.4519</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">119.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">137.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">103.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">8.99</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">305.900</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">346.400</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">267.700</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.210</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 07:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.13</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.28</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.01</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.148</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.139</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">342.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">6.62</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">896.2271</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">100.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">109.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">91.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">5.71</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">255.500</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">277.600</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">234.800</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">12.060</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 07:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.05</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.17</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.82</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.641</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.587</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">324.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.68</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">896.1783</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">142.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">194.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">110.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">23.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">353.800</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">479.900</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">278.100</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">55.010</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 07:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.81</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.95</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.71</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.911</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.838</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">302.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.55</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">896.0831</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">83.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">143.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">63.24</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.82</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">211.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">364.300</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">160.100</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">48.740</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 07:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.84</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.04</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.68</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.261</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.171</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">313.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">20.92</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.9881</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">90.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">126.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">66.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.41</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">225.700</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">319.300</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">165.300</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">37.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 06:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.75</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.88</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.58</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.131</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.046</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">318.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.59</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.8418</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">68.51</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">82.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">53.85</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">6.14</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">175.300</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">204.700</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">145.300</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">13.050</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 06:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.67</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.76</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.55</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.340</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.287</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">315.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">16.02</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.701</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">49.05</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">66.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">35.13</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">7.71</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">131.600</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">175.100</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">100.900</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.490</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 06:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.65</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.71</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.58</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.078</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.032</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">317.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">16.36</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.6407</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">26.65</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">51.68</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">16.35</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">9.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">71.080</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">135.100</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">43.260</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">26.120</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 06:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.53</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.47</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.773</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.735</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">307.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.28</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.6323</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">13.97</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">16.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">10.97</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">37.010</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">43.330</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">29.200</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">3.912</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 05:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.47</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.52</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.41</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.169</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.102</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">308.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.95</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.4056</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">7.03</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">10.87</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">4.35</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.97</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.790</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">29.130</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">11.610</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">5.290</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 05:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.52</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.37</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.254</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.199</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.144</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">310.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">16.81</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.2194</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.58</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">4.35</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.27</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">5.750</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">11.720</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.399</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">3.100</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 05:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.68</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.48</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.723</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.642</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">317.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">27.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.0832</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.01</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.03</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.551</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.609</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.470</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 05:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.63</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.68</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.57</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.254</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.709</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.595</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">336.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">26.12</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.8145</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.069</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.280</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.071</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 04:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.63</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.66</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.59</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.717</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.626</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">332.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">23.09</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.8953</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.056</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.280</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.064</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 04:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.56</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.65</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.46</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.254</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.777</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.657</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">349.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">23.17</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.9313</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.04</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.04</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.059</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.315</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.066</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 04:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.36</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.46</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.28</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.762</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.262</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.244</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">318.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">9.68</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.7002</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.01</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.02</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.057</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.280</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.064</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 04:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.24</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.31</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.016</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.7328</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.056</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.280</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.065</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 03:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.23</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.27</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.762</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.7227</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.065</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.280</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.064</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 03:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.44</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.68</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.22</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.524</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.308</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.267</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">283.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">21.24</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.7609</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.140</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.008</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 03:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.87</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.99</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.64</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.508</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.244</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.234</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">249.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">7.59</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.8853</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 03:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.06</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.91</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.508</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.421</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.345</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">306.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">22.26</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.7488</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.05</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.057</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.245</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.063</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 02:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.06</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.96</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.254</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.654</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.561</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">336.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">24.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.7808</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.061</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.280</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.067</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 02:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.94</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.89</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.249</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.132</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">319.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">23.13</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.8638</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 02:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.90</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.96</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.83</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.423</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.336</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">316.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.87</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">894.9006</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 02:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.76</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.89</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.59</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.249</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.150</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">303.30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.52</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.3269</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.01</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.02</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.065</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.315</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.069</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 01:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.87</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.70</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.908</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.849</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">298.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.59</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.4043</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.062</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.315</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.069</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 01:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.88</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.05</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.72</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.217</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.170</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">290.60</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">14.55</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.6137</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 01:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.99</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.03</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.92</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.254</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.518</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.443</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">298.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.10</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.7771</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 01:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.91</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.96</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.84</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.320</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.226</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">300.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.36</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.8127</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.061</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.280</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.069</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 00:45</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.86</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.99</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.79</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.889</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.788</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">301.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">14.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.7616</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.054</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.210</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.059</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 00:30</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.95</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.01</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.92</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.775</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.686</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">303.80</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">17.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.7992</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="Row">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 00:15</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.96</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.03</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.88</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.50</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.697</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.595</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">305.20</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">19.39</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.9722</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                <tr class="AltRow">
+                    <td style="TEXT-ALIGN: right" nowrap><font size="1">07/21/2022 00:00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.91</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.97</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">18.86</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">97.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">2.074</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">1.994</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">302.40</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.82</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">895.9214</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.052</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.280</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.000</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.058</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">15.00</font></td> 
+                    <td style="TEXT-ALIGN: right"><font size="1">0.00</font></td>
+                </tr>
+ 
+                
+                <tr class="Footer">
+                    <td colspan="17">&nbsp;</td> 
+                    <td colspan="5">
+                        <p align="right"></p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
