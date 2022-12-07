@@ -15,12 +15,14 @@ library(lubridate)
 library(plotly)
 library(viridis)
 library(ggrepel)
+library(here)
+library(magrittr)
 
 options(dplyr.summarise.inform = FALSE)
 ```
 
 ```{r}
-LC_2005_2008 <- read.csv("LC_met_Jan05t_Jul08.csv")
+LC_2005_2008 <- read.csv(here("data/LC_met_Jan05t_Jul08.csv"))
 
 LC_2005_2008 <- LC_2005_2008 %>% 
    dplyr::filter(!is.na(precip)) %>% #remove 2 days missing data
@@ -34,7 +36,7 @@ LC_2005_2008 <- LC_2005_2008 %>%
 ```
 
 ```{r warning=FALSE, include=FALSE}
-LC_2008_2020 <- read.csv("datos_meteorologicos_LC_Aug08_Jun20.csv", na.strings = "NA" )
+LC_2008_2020 <- read.csv(here("data/datos_meteorologicos_LC_Aug08_Jun20.csv"), na.strings = "NA")
 
 LC_2008_2020 <- LC_2008_2020 %>%
   mutate(date = lubridate::dmy(LC_2008_2020$DATA_DATE2)) %>%
@@ -63,12 +65,12 @@ LC_rain <- LC_rain %>%
 ```
 
 ```{r warning=FALSE}
-LC_2020A <- read.csv("Las_Cruces_2020/LC1.csv")
-LC_2020B <- read.csv("Las_Cruces_2020/LC2.csv")
-LC_2020C <- read.csv("Las_Cruces_2020/LC3.csv")
-LC_2020D <- read.csv("Las_Cruces_2020/LC4.csv")
-LC_2020E <- read.csv("Las_Cruces_2020/LC5.csv")
-LC_2020F <- read.csv("Las_Cruces_2020/LC6.csv")
+LC_2020A <- read.csv(here("data/Las_Cruces_2020/LC1.csv"))
+LC_2020B <- read.csv(here("data/Las_Cruces_2020/LC2.csv"))
+LC_2020C <- read.csv(here("data/Las_Cruces_2020/LC3.csv"))
+LC_2020D <- read.csv(here("data/Las_Cruces_2020/LC4.csv"))
+LC_2020E <- read.csv(here("data/Las_Cruces_2020/LC5.csv"))
+LC_2020F <- read.csv(here("data/Las_Cruces_2020/LC6.csv"))
 
 LC_2020 <- bind_rows(LC_2020A, 
                      LC_2020B, 
@@ -97,7 +99,7 @@ daily_rain_2020 <- LC_2020 %>%
 ```{r}
 
 #note there seems to be a gap in the data between 2021-07-15 and 2021-07-24, partially inclusive
-LC_2021 <- read.csv("LC_weather_2021.csv")
+LC_2021 <- read.csv(here("data/LC_weather_2021.csv"))
 
 LC_2021 <- LC_2021 %>% 
   mutate(date_time = lubridate::mdy_hm(Date.and.time.of.measurement)) %>% 
@@ -115,7 +117,7 @@ daily_rain_2021 <- LC_2021 %>%
 
 
 #Note that there is a gap in August
-LC_2022 <- read.csv("2022/LC_weather_2022.csv")
+LC_2022 <- read.csv("data/2022/LC_weather_2022.csv")
 
 LC_2022 <- LC_2022 %>% 
   mutate(date_time = lubridate::mdy_hm(Date.and.time.of.measurement)) %>% 
@@ -260,7 +262,7 @@ cumulative_curves <-  ggplot(data = ytd,
 
 #print
 cumulative_curves
-ggsave("combined_cumulative_2022-11.png", plot = cumulative_curves, width = 8, height = 5)
+ggsave("figures/combined_cumulative_2022-11.png", plot = cumulative_curves, width = 8, height = 5)
 ```
 
 ### Interactive version
