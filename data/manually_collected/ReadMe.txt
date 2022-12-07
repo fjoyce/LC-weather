@@ -1,0 +1,1 @@
+I received the two images and excel file of manually collected data via email from Wágner Lopez on 2022-12-07.
