@@ -17,17 +17,17 @@ library(ggplot2)
 ```
 
 ```{r}
-LC1 <- read.csv("Las_Cruces_2020/LC1.csv")
+LC1 <- read.csv("data/Las_Cruces_2020/LC1.csv")
 
-LC2 <- read.csv("Las_Cruces_2020/LC2.csv")
+LC2 <- read.csv("data/Las_Cruces_2020/LC2.csv")
 
-LC3 <- read.csv("Las_Cruces_2020/LC3.csv")
+LC3 <- read.csv("data/Las_Cruces_2020/LC3.csv")
 
-LC4 <- read.csv("Las_Cruces_2020/LC4.csv")
+LC4 <- read.csv("data/Las_Cruces_2020/LC4.csv")
 
-LC5 <- read.csv("Las_Cruces_2020/LC5.csv")
+LC5 <- read.csv("data/Las_Cruces_2020/LC5.csv")
 
-LC6 <- read.csv("Las_Cruces_2020/LC6.csv")
+LC6 <- read.csv("data/Las_Cruces_2020/LC6.csv")
 
 LC_2020 <- bind_rows(LC1, LC2, LC3, LC4, LC5, LC6)
 
@@ -52,8 +52,12 @@ daily_rain <- ggplot(daily_rain_2020, aes(x = date, y = daily_rainfall)) +
   geom_col() +
   ylab("Daily rainfall (mm)")
 
-ggsave("LCBS_2020_daily_rain.png", daily_rain, width = 7, height = 5)
+daily_rain
 
+ggsave("figures/LCBS_2020_daily_rain.png", daily_rain, width = 7, height = 5)
+
+
+#create histogram of daily rain
 ggplot(daily_rain_2020, aes(x = daily_rainfall)) +
   geom_histogram() +
   geom_density(alpha = 0.2)
