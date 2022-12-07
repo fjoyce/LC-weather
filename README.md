@@ -24,5 +24,15 @@ Manufacturer:	Campbell Scientific
 
 - Since February 2021 I have periodically downloaded data from https://bixa.tropicalstudies.org/meteoro/default.php?pestacion=1
 
+## Loma Linda 
+
+-  Some weather data from Loma Linda are archived on the OTS website.
+-  Meteorological Station: Lomalinda
+-  Location: 8° 44' 18.60'' N, 82° 55' 21.78'' W
+-  Description: Manual rainfall and temperature data
+-  Periods:  
+    - From January 1973 to February 2008
+    - From January 2010 to June 2011
+
 ## Missing data
 
