@@ -117,7 +117,7 @@ daily_rain_2021 <- LC_2021 %>%
 
 
 #Note that there is a gap in August
-LC_2022 <- read.csv("data/2022/LC_weather_2022.csv")
+LC_2022 <- read.csv(here("data/2022/LC_Weather_2022.csv"))
 
 LC_2022 <- LC_2022 %>% 
   mutate(date_time = lubridate::mdy_hm(Date.and.time.of.measurement)) %>% 
@@ -136,6 +136,29 @@ daily_rain_2022 <- LC_2022 %>%
 
 ```{r}
 LC_daily_rain <- bind_rows(LC_2005_2008, LC_rain, daily_rain_2020, daily_rain_2021, daily_rain_2022)
+
+#now check for missing dates (entirely missing rows, not missing values)
+date_range <- seq(ymd('2005-01-01'),ymd('2022-11-30'), by = '1 day')
+
+date_range <- as_date(date_range)
+
+#date_range <-as.Date(date_range)
+
+#number of days there should be is 6543
+length(date_range)
+
+#number of days there are: 6497 
+length(LC_daily_rain$date)
+
+# number of missing days = 46
+length(date_range)-length(LC_daily_rain$date)
+
+#find list of missing dates
+missing_dates <- as_date(setdiff(date_range, LC_daily_rain$date))
+
+view(missing_dates)
+
+
 ```
 
 
