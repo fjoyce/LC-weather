@@ -7,7 +7,7 @@ I started exploring Las Cruces weather data in January 2021, initially to suppor
 ## Data sources  
 
 
-- OTS weather data are here: https://bixa.tropicalstudies.org/meteoro/default.php?pestacion=1
+- OTS weather data from an automated Campbell Scientific weather station, at 15-min intervals, are here: https://bixa.tropicalstudies.org/meteoro/default.php?pestacion=1
 
 Name:	Las Cruces   
 Coordinates:	8° 47' 7.27'' N, 82° 57' 32'' W   
@@ -26,7 +26,7 @@ Manufacturer:	Campbell Scientific
 
 ## Loma Linda 
 
--  Some weather data from Loma Linda are archived on the OTS website.
+-  Some daily weather data from Loma Linda are archived on the OTS website.
 -  In this repo they are here: https://github.com/fjoyce/LC-weather/tree/main/data/Loma%20Linda   
 -  Meteorological Station: Lomalinda
 -  Location: 8° 44' 18.60'' N, 82° 55' 21.78'' W
