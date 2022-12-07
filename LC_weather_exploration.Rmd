@@ -1,0 +1,62 @@
+---
+title: "Las Cruces Luz"
+author: "Francis Joyce"
+date: "1/16/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(lubridate)
+library(ggplot2)
+```
+
+```{r}
+LC_weather_2020 <- read.csv("LC_weather_2020.csv")
+
+LC_weather_2020 <- LC_weather_2020 %>% 
+  mutate(date_time = mdy_hm(Date_time)) %>% 
+  mutate (PAR = Average.ps..active.Rad...) %>% 
+  mutate (lnPAR = log(PAR)) %>% 
+  mutate(date = date(date_time)) %>% 
+  mutate(hour = hour(date_time)) %>% 
+  mutate(Time = hm(Time))
+
+
+mean_rad <- LC_weather_2020 %>% 
+  group_by(Time) %>% 
+  summarize(meanPAR = mean(PAR), n = n())
+
+
+#yesterday <- filter(LC_weather, date == "2021-01-15")
+
+ggplot(data = mean_rad, aes(x= Time, y = meanPAR)) +
+  geom_point()
+
+
+luz <- ggplot(data = LC_weather_2020, aes(x = hour, y=PAR)) +
+  geom_point() 
+  #xlim(6,18)
+luz
+
+
+ggplot(data = LC_weather_2020, aes(x= Time, y = Rainfall)) +
+  geom_point()+
+  geom_line()
+
+LC_rain <- LC_weather_2020 %>% 
+  group_by(date) %>% 
+  summarize(Lluvia_diaria = sum(Rainfall))
+
+ggplot(data = LC_rain, aes(x= date, y = Lluvia_diaria)) +
+  geom_point()+
+  geom_line()
+
+
+
+```
+

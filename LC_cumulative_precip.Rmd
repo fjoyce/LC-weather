@@ -1,0 +1,326 @@
+---
+title: "Las Cruces cumulative annual precipitation"
+author: "Francis Joyce"
+date: "2021-02-21"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r include=FALSE}
+library(tidyverse)
+library(lubridate)
+library(plotly)
+library(viridis)
+library(ggrepel)
+
+options(dplyr.summarise.inform = FALSE)
+```
+
+```{r}
+LC_2005_2008 <- read.csv("LC_met_Jan05t_Jul08.csv")
+
+LC_2005_2008 <- LC_2005_2008 %>% 
+   dplyr::filter(!is.na(precip)) %>% #remove 2 days missing data
+  dplyr::mutate(date = paste(year, month, day, sep = "-")) %>% 
+  dplyr::mutate(date = lubridate::ymd(date)) %>% 
+  dplyr::mutate(daily_rain = precip) %>% 
+  dplyr::mutate(JD = lubridate::yday(date)) %>% 
+  dplyr::select(date, daily_rain, year, JD) 
+ 
+
+```
+
+```{r warning=FALSE, include=FALSE}
+LC_2008_2020 <- read.csv("datos_meteorologicos_LC_Aug08_Jun20.csv", na.strings = "NA" )
+
+LC_2008_2020 <- LC_2008_2020 %>%
+  mutate(date = lubridate::dmy(LC_2008_2020$DATA_DATE2)) %>%
+  mutate(year = lubridate::year(date)) %>%
+  mutate (month = lubridate::month(date)) %>%
+  mutate(day = lubridate::day(date)) %>%
+  mutate(JD = lubridate::yday(date)) %>%
+  mutate(yr = as.factor(year)) %>%
+  mutate(rainfall = as.character(RAIN_MM_TOT)) %>%
+  mutate(rainfall = as.numeric(rainfall)) 
+ #didn't work to go straight from factor to numeric so converted to character first
+  #na.omit #drops 13 cases with NAs
+
+LC_rain <- LC_2008_2020 %>% 
+  select(c(date, year, month, day, yr, rainfall)) %>%
+  na.omit %>% 
+  group_by(date) %>% 
+  summarize(daily_rain = sum(rainfall)) %>% 
+  mutate(year = lubridate::year(date)) %>% 
+  mutate(JD = lubridate::yday(date))
+
+#remove 2020 data for now
+LC_rain <- LC_rain %>% 
+  dplyr::filter(lubridate::year(date) != 2020) 
+   
+```
+
+```{r warning=FALSE}
+LC_2020A <- read.csv("Las_Cruces_2020/LC1.csv")
+LC_2020B <- read.csv("Las_Cruces_2020/LC2.csv")
+LC_2020C <- read.csv("Las_Cruces_2020/LC3.csv")
+LC_2020D <- read.csv("Las_Cruces_2020/LC4.csv")
+LC_2020E <- read.csv("Las_Cruces_2020/LC5.csv")
+LC_2020F <- read.csv("Las_Cruces_2020/LC6.csv")
+
+LC_2020 <- bind_rows(LC_2020A, 
+                     LC_2020B, 
+                     LC_2020C, 
+                     LC_2020D, 
+                     LC_2020E, 
+                     LC_2020F)
+
+rm(LC_2020A, LC_2020B, LC_2020C,
+   LC_2020D, LC_2020E, LC_2020F)
+
+LC_2020 <- LC_2020 %>% 
+  mutate(date_time = lubridate::mdy_hm(Date.and.time.of.measurement)) %>% 
+  mutate (PAR = Average.ps..active.Rad...) %>% 
+  mutate(date = lubridate::date(date_time)) %>% 
+  mutate(hour = lubridate::hour(date_time))
+
+daily_rain_2020 <- LC_2020 %>% 
+  group_by(date) %>% 
+  summarize(daily_rain = sum(Rainfall)) %>% 
+  dplyr::mutate(year = lubridate::year(date)) %>% 
+  dplyr::mutate(JD = lubridate::yday(date))
+ 
+```
+
+```{r}
+
+#note there seems to be a gap in the data between 2021-07-15 and 2021-07-24, partially inclusive
+LC_2021 <- read.csv("LC_weather_2021.csv")
+
+LC_2021 <- LC_2021 %>% 
+  mutate(date_time = lubridate::mdy_hm(Date.and.time.of.measurement)) %>% 
+  mutate(date = lubridate::date(date_time)) %>% 
+  mutate(hour = lubridate::hour(date_time))
+
+daily_rain_2021 <- LC_2021 %>% 
+  group_by(date) %>% 
+  summarize(daily_rain = sum(Rainfall)) %>% 
+  dplyr::mutate(year = lubridate::year(date)) %>% 
+  dplyr::mutate(JD = lubridate::yday(date))
+
+```
+```{r}
+
+
+#Note that there is a gap in August
+LC_2022 <- read.csv("2022/LC_weather_2022.csv")
+
+LC_2022 <- LC_2022 %>% 
+  mutate(date_time = lubridate::mdy_hm(Date.and.time.of.measurement)) %>% 
+  mutate(date = lubridate::date(date_time)) %>% 
+  mutate(hour = lubridate::hour(date_time))
+
+daily_rain_2022 <- LC_2022 %>% 
+  group_by(date) %>% 
+  summarize(daily_rain = sum(Rainfall)) %>% 
+  dplyr::mutate(year = lubridate::year(date)) %>% 
+  dplyr::mutate(JD = lubridate::yday(date))
+
+```
+
+
+
+```{r}
+LC_daily_rain <- bind_rows(LC_2005_2008, LC_rain, daily_rain_2020, daily_rain_2021, daily_rain_2022)
+```
+
+
+```{r warning=FALSE, include=FALSE}
+#calculate annual totals...
+rain_annual_totals <- LC_daily_rain %>% 
+  dplyr::group_by(year) %>% 
+  summarize(annual_rain = sum (daily_rain)) %>% 
+  mutate(date = str_c(year, "01-01", sep = "-") %>% lubridate::ymd())
+```
+
+### Static version
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+#create data frame of dates for first day in each month to use as tick marks & labels
+doy <- lubridate::date(
+  c(
+    "2016-01-01",
+    "2016-02-01",
+    "2016-03-01",
+    "2016-04-01",
+    "2016-05-01",
+    "2016-06-01",
+    "2016-07-01",
+    "2016-08-01",
+    "2016-09-01",
+    "2016-10-01",
+    "2016-11-01",
+    "2016-12-01"
+  )
+)
+
+#extract day of year (doy) using yday and also extract month for tick mark labels
+doy <- tibble(mon = lubridate::month(doy, label = T),
+              jul = lubridate::yday(doy))
+
+#create data frame with cumulative annual rainfall by year
+ytd <- LC_daily_rain %>%
+  #filter(year != "1991") %>%
+  group_by(year, .drop = FALSE) %>%
+  mutate(cum_rain = cumsum(daily_rain)) %>% 
+  ungroup() %>% 
+  # group_by(year) %>% 
+  # create column with "year" label
+  mutate(year_label = case_when(
+    year == 2007 & JD == 365 ~ year, 
+    #year == 2008 & JD == 365 ~ year,
+    #year == 6 & JD == 365 ~ year,
+    #year == 2010 & JD == 365 ~ year, 
+    year == 2021 & JD == 365 ~ year, 
+    # for 2022
+    year == 2022 & JD == 330 ~ year
+  ))
+
+LC_rain_mean <- LC_rain %>%
+  filter(year <2022) %>% 
+  group_by(JD) %>% 
+  summarize(mean_rain = mean(daily_rain)) %>% 
+  ungroup()
+
+ytd_mean <- LC_rain_mean %>% 
+   mutate(cum_rain = cumsum(mean_rain))
+  
+
+mean_cumulative_curve <- ggplot(data = ytd_mean,
+                                  aes(
+                                    x = JD,
+                                    y = mean_rain
+                                  )) +
+  geom_line() +
+  scale_x_continuous(breaks = doy$jul,
+                     labels = doy$mon,
+                     limits = c(0, 380)) +
+  #scale_y_continuous(breaks = seq(0,3500, 500)) +
+  #scale_colour_viridis_c() +
+  #scale_color_manual(values = cal_palette("kelp1")) +
+  #scale_x_date(date_labels = "%b", date_breaks = "months") +
+  labs(
+    title = "Median cumulative precipitation",
+    subtitle = "  Las Cruces 2005 to 2021",
+    y = "Precipitation (mm)",
+    x = "",
+    caption = "2005-2021"
+  )
+
+mean_cumulative_curve
+
+#create plot
+cumulative_curves <-  ggplot(data = ytd,
+                             aes(
+                               x = JD,
+                               y = cum_rain,
+                               group = year,
+                               color = year
+                             )) +
+  geom_line() +
+  scale_x_continuous(breaks = doy$jul,
+                     labels = doy$mon, 
+                     limits = c(0, 395),
+                     expand = c(0,0.2)
+                     ) +
+  #scale_y_continuous(breaks = seq(0,3500, 500)) +
+  #scale_colour_viridis_c() +
+  #scale_color_manual(values = cal_palette("kelp1")) +
+  #scale_x_date(date_labels = "%b", date_breaks = "months") +
+  labs(
+    title = "Annual cumulative precipitation",
+    subtitle = "Las Cruces 2005 to 2022-11",
+    y = "Precipitation (mm)",
+    x = "",
+    caption = "2005-2022"
+  ) +
+  geom_text_repel(aes(x = JD + 20, y = cum_rain, label = year_label), direction = c("y"), hjust = 0) +
+  scale_color_viridis() +
+  #theme_bw() +
+  theme(
+    text = element_text(size = 15),
+    axis.ticks.length.x = unit(0.5, "cm"),
+    axis.text.x = element_text(vjust = 5.5,
+                               hjust = -0.2)
+  ) 
+ 
+
+#print
+cumulative_curves
+ggsave("combined_cumulative_2022-11.png", plot = cumulative_curves, width = 8, height = 5)
+```
+
+### Interactive version
+
+```{r echo=FALSE}
+ ggplotly(cumulative_curves)
+```
+
+
+## Comparing June rainfall
+```{r}
+June_rainfall <- LC_daily_rain %>% 
+  filter(JD>155) %>% 
+  filter(JD<206) %>% 
+  group_by(year) %>% 
+  summarize(june_rain = sum(daily_rain))
+
+summer_rain_2005_2021 <- June_rainfall %>% 
+ filter(year != 2022)
+
+median_rain <- median(summer_rain_2005_2021$june_rain)
+
+summer_rainfall <- ggplot(data = June_rainfall, aes(x = year, y = june_rain)) +
+  geom_col(fill = "dark blue") +
+  geom_hline(yintercept = median_rain, linetype = 2) +
+  geom_text(aes(label = round(june_rain)), nudge_y = 35)+
+  labs(
+    title = "Lluvia en temporada de muestreo Islas",
+    subtitle = "Estación meteorológica Las Cruces: 6 de junio hasta 25 julio",
+    y = "Precipitación (mm)",
+    x = "año"
+  ) 
+
+summer_rainfall
+```
+
+```{r}
+spring_rainfall <- LC_daily_rain %>% 
+  filter(JD>72) %>% 
+  filter(JD<157) %>% 
+  group_by(year) %>% 
+  summarize(spring_rain = sum(daily_rain))
+
+spring_rain_2005_2021 <- spring_rainfall %>% 
+ filter(year != 2022)
+
+median_spring_rain <- median(spring_rain_2005_2021$spring_rain)
+
+spring_rainfall_plot <- ggplot(data = spring_rainfall, aes(x = year, y = spring_rain)) +
+  geom_col() +
+  geom_hline(yintercept = median_spring_rain, linetype = 2) +
+  geom_text(aes(label = round(spring_rain)), nudge_y = 45)+
+  labs(
+    title = "Spring rainfall",
+    subtitle = "LCBS ~13 March to 5 June",
+    y = "Precipitación (mm)",
+    x = "año"
+  ) 
+
+spring_rainfall_plot
+```
+
+

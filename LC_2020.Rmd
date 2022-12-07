@@ -1,0 +1,77 @@
+---
+title: "Las Cruces 2020 data"
+author: "Francis Joyce"
+date: "1/18/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(tidyverse)
+library(lubridate)
+library(ggplot2)
+```
+
+```{r}
+LC1 <- read.csv("Las_Cruces_2020/LC1.csv")
+
+LC2 <- read.csv("Las_Cruces_2020/LC2.csv")
+
+LC3 <- read.csv("Las_Cruces_2020/LC3.csv")
+
+LC4 <- read.csv("Las_Cruces_2020/LC4.csv")
+
+LC5 <- read.csv("Las_Cruces_2020/LC5.csv")
+
+LC6 <- read.csv("Las_Cruces_2020/LC6.csv")
+
+LC_2020 <- bind_rows(LC1, LC2, LC3, LC4, LC5, LC6)
+
+LC_2020 <- LC_2020 %>% 
+  mutate(date_time = mdy_hm(Date.and.time.of.measurement)) %>% 
+  mutate (PAR = Average.ps..active.Rad...) %>% 
+  mutate(date = date(date_time)) %>% 
+  mutate(hour = hour(date_time))
+ 
+daily_rain_2020 <- LC_2020 %>% 
+  group_by(date) %>% 
+  summarize(daily_rainfall = sum(Rainfall), n = n())
+
+monthly_rain_2020 <- LC_2020 %>% 
+  group_by(month(date)) %>% 
+  summarize(monthly_rain <- sum(Rainfall), monthly_sd <- sd(Rainfall), n <-n())
+
+
+hist(daily_rain_2020$daily_rainfall)
+
+daily_rain <- ggplot(daily_rain_2020, aes(x = date, y = daily_rainfall)) +
+  geom_col() +
+  ylab("Daily rainfall (mm)")
+
+ggsave("LCBS_2020_daily_rain.png", daily_rain, width = 7, height = 5)
+
+ggplot(daily_rain_2020, aes(x = daily_rainfall)) +
+  geom_histogram() +
+  geom_density(alpha = 0.2)
+
+```
+
+
+```{r}
+LC_2020_cum <-  ggplot(data=daily_rain_2020, aes(x = date, y = cumsum(daily_rainfall))) +
+      geom_line(color = "royalblue4") +
+      scale_x_date(date_labels = "%b", date_breaks = "months") +
+      labs(title = "Las Cruces 2020",
+           y = "Cumulative rainfall (mm)",
+           x = "Date") + theme_bw(base_size = 15) #+
+      #scale_y_continuous(limits = c(0,300))
+LC_2020_cum
+
+ggsave("LCBS_2020_cumulative_rain.png", width = 7, height = 5)
+```
+
+
