@@ -18,13 +18,17 @@ library(ggrepel)
 library(here)
 library(magrittr)
 
+#suppress summarize info from dplyr
 options(dplyr.summarise.inform = FALSE)
 ```
 
 ```{r}
+#read in daily data from 2002-2008
 LC_2005_2008 <- read.csv(here("data/LC_met_Jan05t_Jul08.csv"))
 
-LC_2005_2008 <- LC_2005_2008 %>% 
+#remove 2 missing days of data (might want to do this downstream)
+#reformat date columns 
+daily_rain_2005_2008 <- LC_2005_2008 %>% 
    dplyr::filter(!is.na(precip)) %>% #remove 2 days missing data
   dplyr::mutate(date = paste(year, month, day, sep = "-")) %>% 
   dplyr::mutate(date = lubridate::ymd(date)) %>% 
@@ -36,8 +40,12 @@ LC_2005_2008 <- LC_2005_2008 %>%
 ```
 
 ```{r warning=FALSE, include=FALSE}
+
+#read in 15-min data from 2008- 2020
 LC_2008_2020 <- read.csv(here("data/datos_meteorologicos_LC_Aug08_Jun20.csv"), na.strings = "NA")
 
+
+#reformat dates
 LC_2008_2020 <- LC_2008_2020 %>%
   mutate(date = lubridate::dmy(LC_2008_2020$DATA_DATE2)) %>%
   mutate(year = lubridate::year(date)) %>%
@@ -50,21 +58,32 @@ LC_2008_2020 <- LC_2008_2020 %>%
  #didn't work to go straight from factor to numeric so converted to character first
   #na.omit #drops 13 cases with NAs
 
-LC_rain <- LC_2008_2020 %>% 
+
+#summarize 2008-2020 rainfall by day
+#added n column to see how many rows there were for each day
+#15-min intervals: n = 96
+#30-min intervals: n = 48
+#n = some other value-> something is off
+
+
+LC_rain_2008_2020 <- LC_2008_2020 %>% 
   select(c(date, year, month, day, yr, rainfall)) %>%
   na.omit %>% 
   group_by(date) %>% 
-  summarize(daily_rain = sum(rainfall)) %>% 
+  summarize(daily_rain = sum(rainfall),
+            n = n()) %>% 
   mutate(year = lubridate::year(date)) %>% 
   mutate(JD = lubridate::yday(date))
 
-#remove 2020 data for now
-LC_rain <- LC_rain %>% 
+#remove 2020 data for now because it's a partial year (append below instead below)
+daily_rain_2008_2019 <- LC_rain_2008_2020 %>% 
   dplyr::filter(lubridate::year(date) != 2020) 
    
 ```
 
 ```{r warning=FALSE}
+#Downloaded and read in 2020 data in 6 batches (each 2 months?)
+
 LC_2020A <- read.csv(here("data/Las_Cruces_2020/LC1.csv"))
 LC_2020B <- read.csv(here("data/Las_Cruces_2020/LC2.csv"))
 LC_2020C <- read.csv(here("data/Las_Cruces_2020/LC3.csv"))
@@ -72,6 +91,7 @@ LC_2020D <- read.csv(here("data/Las_Cruces_2020/LC4.csv"))
 LC_2020E <- read.csv(here("data/Las_Cruces_2020/LC5.csv"))
 LC_2020F <- read.csv(here("data/Las_Cruces_2020/LC6.csv"))
 
+#combine 2020 batches into one dataframe
 LC_2020 <- bind_rows(LC_2020A, 
                      LC_2020B, 
                      LC_2020C, 
@@ -79,33 +99,45 @@ LC_2020 <- bind_rows(LC_2020A,
                      LC_2020E, 
                      LC_2020F)
 
+#then clear individual batches from workspace
 rm(LC_2020A, LC_2020B, LC_2020C,
    LC_2020D, LC_2020E, LC_2020F)
 
+#clear out data frame with partial 2020 data
+rm(LC_rain_2008_2020)
+
+
+#reformat 2020 dates (and PAR column name)
 LC_2020 <- LC_2020 %>% 
   mutate(date_time = lubridate::mdy_hm(Date.and.time.of.measurement)) %>% 
   mutate (PAR = Average.ps..active.Rad...) %>% 
   mutate(date = lubridate::date(date_time)) %>% 
   mutate(hour = lubridate::hour(date_time))
 
+
+#now summarize 2020 rainfall by day
 daily_rain_2020 <- LC_2020 %>% 
   group_by(date) %>% 
   summarize(daily_rain = sum(Rainfall)) %>% 
   dplyr::mutate(year = lubridate::year(date)) %>% 
-  dplyr::mutate(JD = lubridate::yday(date))
- 
+  dplyr::mutate(JD = lubridate::yday(date)) %>% 
+  drop_na() #somehow an NA row got in here (from one of the batches?), drop NA
 ```
 
 ```{r}
 
+#read in 2021 data (single csv)
 #note there seems to be a gap in the data between 2021-07-15 and 2021-07-24, partially inclusive
 LC_2021 <- read.csv(here("data/LC_weather_2021.csv"))
 
+
+#reformat dates
 LC_2021 <- LC_2021 %>% 
   mutate(date_time = lubridate::mdy_hm(Date.and.time.of.measurement)) %>% 
   mutate(date = lubridate::date(date_time)) %>% 
   mutate(hour = lubridate::hour(date_time))
 
+#summarize by day
 daily_rain_2021 <- LC_2021 %>% 
   group_by(date) %>% 
   summarize(daily_rain = sum(Rainfall)) %>% 
@@ -115,15 +147,18 @@ daily_rain_2021 <- LC_2021 %>%
 ```
 ```{r}
 
-
+#read in 2022 data
 #Note that there is a gap in August
 LC_2022 <- read.csv(here("data/2022/LC_Weather_2022.csv"))
 
+
+#reformat dates
 LC_2022 <- LC_2022 %>% 
   mutate(date_time = lubridate::mdy_hm(Date.and.time.of.measurement)) %>% 
   mutate(date = lubridate::date(date_time)) %>% 
   mutate(hour = lubridate::hour(date_time))
 
+#summarize rainfall by day
 daily_rain_2022 <- LC_2022 %>% 
   group_by(date) %>% 
   summarize(daily_rain = sum(Rainfall)) %>% 
@@ -133,18 +168,22 @@ daily_rain_2022 <- LC_2022 %>%
 ```
 
 
+# Finding and fixing missing data 
 
 ```{r}
-LC_daily_rain <- bind_rows(LC_2005_2008, LC_rain, daily_rain_2020, daily_rain_2021, daily_rain_2022)
 
-#now check for missing dates (entirely missing rows, not missing values)
+#combine all individual data frames 2005 through 2022 into single data frame
+LC_daily_rain <- bind_rows(daily_rain_2005_2008, daily_rain_2008_2019, daily_rain_2020, daily_rain_2021, daily_rain_2022)
+
+#check for missing dates (entirely missing rows, not missing values)
+
+#create a sequence from start of date range to last date (i.e. no missing days)
 date_range <- seq(ymd('2005-01-01'),ymd('2022-11-30'), by = '1 day')
 
+#not sure this is needed
 date_range <- as_date(date_range)
 
-#date_range <-as.Date(date_range)
-
-#number of days there should be is 6543
+#number of days there should be is 6543 
 length(date_range)
 
 #number of days there are: 6497 
@@ -153,10 +192,28 @@ length(LC_daily_rain$date)
 # number of missing days = 46
 length(date_range)-length(LC_daily_rain$date)
 
+
+#calculate percentage of missing dates that are missing data entirely
+
+(length(date_range)-length(LC_daily_rain$date))/length(date_range)*100
+
+#0.72% of days are missing
+
+
 #find list of missing dates
 missing_dates <- as_date(setdiff(date_range, LC_daily_rain$date))
 
+#note that there may be data gaps shorter than 24 hrs that won't be reflected in this list. The way the 15-min data are summarized, they get a daily value even if there was a single period
+
+
 view(missing_dates)
+
+
+#read in manually collected data
+#note that manually collected data are recorded at 07:00, so they do not correspond cleanly to the 24 hr periods in the summarized daily data. For manually collected data, data on each recorded date are mostly from the previou day (07-24h, vs. 00-07h)
+
+#SO manually collected dates correspond to missing automated dates + 1 day
+
 
 
 ```
