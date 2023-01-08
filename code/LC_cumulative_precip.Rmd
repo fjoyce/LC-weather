@@ -223,7 +223,8 @@ view(missing_dates)
 #calculate annual totals...
 rain_annual_totals <- LC_daily_rain %>% 
   dplyr::group_by(year) %>% 
-  summarize(annual_rain = sum (daily_rain)) %>% 
+  summarize(annual_rain = sum (daily_rain),
+            days = n()) %>% #number of days with data
   mutate(date = str_c(year, "01-01", sep = "-") %>% lubridate::ymd())
 ```
 
@@ -271,7 +272,7 @@ ytd <- LC_daily_rain %>%
     year == 2022 & JD == 330 ~ year
   ))
 
-LC_rain_mean <- LC_rain %>%
+LC_rain_mean <- LC_daily_rain %>%
   filter(year <2022) %>% 
   group_by(JD) %>% 
   summarize(mean_rain = mean(daily_rain)) %>% 
@@ -324,7 +325,7 @@ cumulative_curves <-  ggplot(data = ytd,
   #scale_x_date(date_labels = "%b", date_breaks = "months") +
   labs(
     title = "Annual cumulative precipitation",
-    subtitle = "Las Cruces 2005 to 2022-11",
+    subtitle = "Las Cruces 2005 to 2022",
     y = "Precipitation (mm)",
     x = "",
     caption = "2005-2022"
@@ -342,7 +343,9 @@ cumulative_curves <-  ggplot(data = ytd,
 
 #print
 cumulative_curves
-ggsave("figures/combined_cumulative_2022-11.png", plot = cumulative_curves, width = 8, height = 5)
+
+#save figure to file. Note that becausee of the way Rmd handles filepaths, the filepath is relative to where the Rmd file is, not to the home directory. So this ends up in code/figures instead of just figures/
+ggsave("figures/combined_cumulative_2022_full_year.png", plot = cumulative_curves, width = 8, height = 5)
 ```
 
 ### Interactive version
