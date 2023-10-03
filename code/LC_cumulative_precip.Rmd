@@ -17,6 +17,7 @@ library(viridis)
 library(ggrepel)
 library(here)
 library(magrittr)
+library(cowplot)
 
 #suppress summarize info from dplyr
 options(dplyr.summarise.inform = FALSE)
@@ -158,6 +159,8 @@ LC_2022 <- LC_2022 %>%
   mutate(date = lubridate::date(date_time)) %>% 
   mutate(hour = lubridate::hour(date_time))
 
+
+
 #summarize rainfall by day
 daily_rain_2022 <- LC_2022 %>% 
   group_by(date) %>% 
@@ -167,29 +170,47 @@ daily_rain_2022 <- LC_2022 %>%
 
 ```
 
+```{r}
+LC_2023 <- read_csv(here("data/2023/LC_weather_2023.csv")) 
+
+LC_2023 <- LC_2023 %>% 
+  mutate(date_time = mdy_hm(`Date and time of measurement`)) %>% 
+  mutate(date = lubridate::date(date_time)) %>% 
+  mutate(hour = lubridate::hour(date_time))
+  
+#summarize rainfall by day
+daily_rain_2023 <- LC_2023 %>% 
+  group_by(date) %>% 
+  summarize(daily_rain = sum(Rainfall)) %>% 
+  dplyr::mutate(year = lubridate::year(date)) %>% 
+  dplyr::mutate(JD = lubridate::yday(date))
+
+```
+
+
 
 # Finding and fixing missing data 
 
 ```{r}
 
 #combine all individual data frames 2005 through 2022 into single data frame
-LC_daily_rain <- bind_rows(daily_rain_2005_2008, daily_rain_2008_2019, daily_rain_2020, daily_rain_2021, daily_rain_2022)
+LC_daily_rain <- bind_rows(daily_rain_2005_2008, daily_rain_2008_2019, daily_rain_2020, daily_rain_2021, daily_rain_2022, daily_rain_2023)
 
 #check for missing dates (entirely missing rows, not missing values)
 
 #create a sequence from start of date range to last date (i.e. no missing days)
-date_range <- seq(ymd('2005-01-01'),ymd('2022-11-30'), by = '1 day')
+date_range <- seq(ymd('2005-01-01'),ymd('2023-09-30'), by = '1 day')
 
 #not sure this is needed
 date_range <- as_date(date_range)
 
-#number of days there should be is 6543 
+#number of days there should be is 6847 
 length(date_range)
 
-#number of days there are: 6497 
+#number of days there are: 6800 
 length(LC_daily_rain$date)
 
-# number of missing days = 46
+# number of missing days = 47
 length(date_range)-length(LC_daily_rain$date)
 
 
@@ -197,7 +218,7 @@ length(date_range)-length(LC_daily_rain$date)
 
 (length(date_range)-length(LC_daily_rain$date))/length(date_range)*100
 
-#0.72% of days are missing
+#0.69% of days are missing
 
 
 #find list of missing dates
@@ -206,11 +227,11 @@ missing_dates <- as_date(setdiff(date_range, LC_daily_rain$date))
 #note that there may be data gaps shorter than 24 hrs that won't be reflected in this list. The way the 15-min data are summarized, they get a daily value even if there was a single period
 
 
-view(missing_dates)
+#view(missing_dates)
 
 
-#read in manually collected data
-#note that manually collected data are recorded at 07:00, so they do not correspond cleanly to the 24 hr periods in the summarized daily data. For manually collected data, data on each recorded date are mostly from the previou day (07-24h, vs. 00-07h)
+#read in manually collected data [NOT COMPLETE]
+#note that manually collected data are recorded at 07:00, so they do not correspond cleanly to the 24 hr periods in the summarized daily data. For manually collected data, data on each recorded date are mostly from the previous day (07-24h, vs. 00-07h)
 
 #SO manually collected dates correspond to missing automated dates + 1 day
 
@@ -264,12 +285,12 @@ ytd <- LC_daily_rain %>%
   # create column with "year" label
   mutate(year_label = case_when(
     year == 2007 & JD == 365 ~ year, 
-    #year == 2008 & JD == 365 ~ year,
+    year == 2008 & JD == 365 ~ year,
     #year == 6 & JD == 365 ~ year,
-    #year == 2010 & JD == 365 ~ year, 
+    year == 2010 & JD == 365 ~ year, 
     year == 2021 & JD == 365 ~ year, 
     # for 2022
-    year == 2022 & JD == 330 ~ year
+    year == 2022 & JD == 365 ~ year
   ))
 
 LC_rain_mean <- LC_daily_rain %>%
@@ -316,19 +337,19 @@ cumulative_curves <-  ggplot(data = ytd,
   geom_line() +
   scale_x_continuous(breaks = doy$jul,
                      labels = doy$mon, 
-                     limits = c(0, 395),
                      expand = c(0,0.2)
                      ) +
+  #scale_y_continuous(limits = c(0, 2000)) +
   #scale_y_continuous(breaks = seq(0,3500, 500)) +
   #scale_colour_viridis_c() +
   #scale_color_manual(values = cal_palette("kelp1")) +
   #scale_x_date(date_labels = "%b", date_breaks = "months") +
   labs(
     title = "Annual cumulative precipitation",
-    subtitle = "Las Cruces 2005 to 2022",
+    subtitle = "Las Cruces 2005 to 2023",
     y = "Precipitation (mm)",
     x = "",
-    caption = "2005-2022"
+    caption = "2005-2023"
   ) +
   geom_text_repel(aes(x = JD + 20, y = cum_rain, label = year_label), direction = c("y"), hjust = 0) +
   scale_color_viridis() +
@@ -344,8 +365,8 @@ cumulative_curves <-  ggplot(data = ytd,
 #print
 cumulative_curves
 
-#save figure to file. Note that becausee of the way Rmd handles filepaths, the filepath is relative to where the Rmd file is, not to the home directory. So this ends up in code/figures instead of just figures/
-ggsave("figures/combined_cumulative_2022_full_year.png", plot = cumulative_curves, width = 8, height = 5)
+#save figure to file. Note that because of the way Rmd handles filepaths, the filepath is relative to where the Rmd file is, not to the home directory. So this ends up in code/figures instead of just figures/
+ggsave("figures/combined_cumulative_2023_labeled_through_July.png", plot = cumulative_curves, width = 8, height = 5)
 ```
 
 ### Interactive version
@@ -355,7 +376,7 @@ ggsave("figures/combined_cumulative_2022_full_year.png", plot = cumulative_curve
 ```
 
 
-## Comparing June rainfall
+## Comparing Islas field season rainfall
 ```{r}
 June_rainfall <- LC_daily_rain %>% 
   filter(JD>155) %>% 
@@ -383,6 +404,38 @@ summer_rainfall
 ```
 
 ```{r}
+## Comparing June rainfall
+June_rainfall <- LC_daily_rain %>% 
+  filter(JD>152) %>% #1 June is doy 152
+  filter(JD<181) %>% #30 June is doy 181 
+  group_by(year) %>% 
+  summarize(june_rain = sum(daily_rain))
+
+june_rain_2005_2021 <- June_rainfall %>% 
+ filter(year != 2022)
+
+median_rain <- median(june_rain_2005_2021$june_rain)
+
+June_rainfall_plot <- ggplot(data = June_rainfall, aes(x = year, y = june_rain)) +
+  geom_col(fill = "dark blue") +
+  geom_hline(yintercept = median_rain, linetype = 2) +
+  geom_text(aes(label = round(june_rain)), nudge_y = 35)+
+  labs(
+    title = "Lluvia 1-30 junio",
+    subtitle = "Estación meteorológica Las Cruces",
+    caption = "Línea discontinua representa valor medio 2005-2021 (338 mm)",
+    y = "Precipitación (mm)",
+    x = "año"
+  ) +
+  scale_x_continuous(breaks = 2005:2023) +
+  scale_y_continuous(expand = c(0,0), breaks = c(0,100, 200, 300, 400, 500, 600, 700), limits = c(0, 700)) +
+  theme_minimal()
+
+June_rainfall_plot
+```
+
+
+```{r}
 spring_rainfall <- LC_daily_rain %>% 
   filter(JD>72) %>% 
   filter(JD<157) %>% 
@@ -406,6 +459,69 @@ spring_rainfall_plot <- ggplot(data = spring_rainfall, aes(x = year, y = spring_
   ) 
 
 spring_rainfall_plot
+```
+## Total rainfall across years
+
+```{r}
+annual_rain <- LC_daily_rain %>% 
+  group_by(year) %>% 
+  summarize(annual_rainfall = round(sum(daily_rain))) %>% 
+  mutate(annual_rain_m = round(annual_rainfall/1000, 2))
+
+
+median_annual <- median(annual_rain$annual_rainfall)
+  
+  
+annual_rain_plot <-
+  ggplot(data = annual_rain, aes(
+    x = year, 
+    y = annual_rainfall)) +
+  geom_col(fill = "dark blue")+
+  ylab("Precipitación anual (mm)") +
+  xlab("Año") +
+  geom_text(aes(label = annual_rainfall), vjust = -0.2)+
+  scale_x_continuous(breaks =c(2005:2022)) +
+  scale_y_continuous(limits = c(0,5300), expand = c(0,0)) +
+  geom_hline(yintercept = median_annual, linetype = 2)
+  
+
+annual_rain_plot
+
+ggsave("annual_rain.png", annual_rain_plot, width = 7, height = 5)
+```
+
+##Low and high temperatures
+
+```{r}
+
+daily_temp_2022 <- LC_2022 %>% 
+  group_by(date) %>% 
+  summarize(high_temp = max(Max.Air.Temp),
+            low_temp = min(Min.Air.Temp)) %>% 
+  pivot_longer(high_temp:low_temp, names_to = "extrema") %>% 
+  ungroup()
+
+temp_colors <- c("red", "blue")
+
+median_high <- daily_temp_2022 %>% 
+  filter(extrema == "high_temp") %>% 
+  select(value)
+
+median_high <- median(median_high$value)
+
+median_low <- daily_temp_2022 %>% 
+  filter(extrema == "low_temp") %>% 
+  select(value)
+
+median_low <- median(median_low$value)
+
+thermal_envelope <- ggplot(daily_temp_2022, aes(x = date, y = value, group = extrema)) +
+  geom_line(aes(color = extrema)) +
+  geom_hline(yintercept = c(median_high, median_low))
+
+
+thermal_envelope
+
 ```
 
 
