@@ -285,12 +285,13 @@ ytd <- LC_daily_rain %>%
   # create column with "year" label
   mutate(year_label = case_when(
     year == 2007 & JD == 365 ~ year, 
-    year == 2008 & JD == 365 ~ year,
+    #year == 2008 & JD == 365 ~ year,
     #year == 6 & JD == 365 ~ year,
     year == 2010 & JD == 365 ~ year, 
-    year == 2021 & JD == 365 ~ year, 
+    #year == 2021 & JD == 365 ~ year, 
     # for 2022
-    year == 2022 & JD == 365 ~ year
+    year == 2022 & JD == 365 ~ year,
+    year == 2023 & JD == 365 ~ year
   ))
 
 LC_rain_mean <- LC_daily_rain %>%
@@ -366,7 +367,7 @@ cumulative_curves <-  ggplot(data = ytd,
 cumulative_curves
 
 #save figure to file. Note that because of the way Rmd handles filepaths, the filepath is relative to where the Rmd file is, not to the home directory. So this ends up in code/figures instead of just figures/
-ggsave("figures/combined_cumulative_2023_labeled_through_July.png", plot = cumulative_curves, width = 8, height = 5)
+ggsave("figures/combined_cumulative_2023.png", plot = cumulative_curves, width = 8, height = 5)
 ```
 
 ### Interactive version
@@ -480,14 +481,14 @@ annual_rain_plot <-
   ylab("Precipitación anual (mm)") +
   xlab("Año") +
   geom_text(aes(label = annual_rainfall), vjust = -0.2)+
-  scale_x_continuous(breaks =c(2005:2022)) +
+  scale_x_continuous(breaks =c(2005:2023)) +
   scale_y_continuous(limits = c(0,5300), expand = c(0,0)) +
   geom_hline(yintercept = median_annual, linetype = 2)
   
 
 annual_rain_plot
 
-ggsave("annual_rain.png", annual_rain_plot, width = 7, height = 5)
+ggsave("annual_rain_2005_2023.png", annual_rain_plot, width = 7, height = 5)
 ```
 
 ##Low and high temperatures
