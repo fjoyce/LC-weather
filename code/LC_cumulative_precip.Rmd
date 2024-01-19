@@ -525,4 +525,121 @@ thermal_envelope
 
 ```
 
+```{r}
+#2023 monthly rain
+
+#monthly rain in 2023
+monthly_2023 <- daily_rain_2023 %>% 
+   group_by(month = lubridate::floor_date(date, 'month')) %>% 
+  summarize(monthly_rain = sum(daily_rain)) %>% 
+  ungroup() %>% 
+  mutate(month_numeric = month(month, label = TRUE))
+ 
+
+#monthly rain in all years
+
+monthly_rain <- ytd %>% 
+  group_by(year, month = lubridate::floor_date(date, 'month')) %>% 
+  summarize(monthly_rain = sum(daily_rain)) %>% 
+  ungroup() %>% 
+  mutate(month_numeric = month(month, label = TRUE)) %>% 
+  group_by(month_numeric) %>%
+  summarize(median_monthly_rain = median(monthly_rain)) %>% 
+  ungroup()
+  
+monthly_rain_plot <- ggplot(data = monthly_rain, aes(x = month_numeric, y = median_monthly_rain)) +
+  geom_col(data = monthly_2023, aes(x = month_numeric, y = monthly_rain)) + 
+  scale_y_continuous(expand = c(0,10)) +
+  geom_point() + 
+  xlab("Month") +
+  ylab("Rainfall") +
+  labs(caption = "Points = median for 2005-2023, Bars = 2023 data")
+
+  
+
+monthly_rain_plot
+
+ggsave("figures/monthly_median_vs_2023_rainfall.png", plot = monthly_rain_plot, width = 8, height = 5)
+```
+```{r}
+#let's see how annual rainfall compares to ENSO status
+
+#use the rsoi package
+library(rsoi)
+library(viridis)
+library(RColorBrewer)
+library(cowplot)
+
+#download the ONI index (from NOAA?)
+download_oni(use_cache = FALSE, file = here("data/ONI/ONI.csv"))
+
+#read in
+ONI <- read_csv(here("data/ONI/ONI.csv")) %>% 
+  filter(Year > 2004) %>% 
+  mutate(mon = lubridate::month(Date, label = TRUE))
+
+
+#annual ONI
+
+annual_ONI <- ONI %>% 
+  group_by(Year) %>% 
+  summarize(mean_ONI = mean(ONI, na.rm = TRUE)) %>% 
+  ungroup()
+
+#rainy season ONI
+
+rainy_season_ONI <- ONI %>% 
+  filter(! mon %in% c("Jan", "Feb", "Mar", "Dec")) %>% 
+  group_by(Year) %>% 
+  summarize(mean_ONI = mean(ONI)) %>%
+  ungroup()
+              
+
+
+#set limits to center the divergent color scale
+limit <- c(-2.7, 2.7)
+  
+#try plotting heatmap
+p <-ggplot(ONI,aes(Year,mon,fill=ONI)) +
+  geom_tile(color= "white") + 
+  scale_fill_distiller(palette = "RdBu", limit = limit) +
+  theme_cowplot() +
+  ylab("Month")
+
+p
+
+
+#redo annual rain with bars color coded by ENSO status
+
+#first need to join annual average ONI values to rainfall df
+
+ONI_rain <- left_join(annual_rain, rainy_season_ONI, join_by(year == Year))
+
+
+annual_limit <- c(-1.7,1.7)
+
+ONI_rain_plot <-
+  ggplot(data = ONI_rain, aes(
+    x = year, 
+    y = annual_rainfall, fill = mean_ONI)) +
+  geom_col() +
+  scale_fill_distiller(palette = "RdBu", limit = annual_limit) +
+  ylab("Annual rainfall (mm)") +
+  xlab("Year") +
+  geom_text(aes(label = annual_rainfall), vjust = -0.2)+
+  scale_x_continuous(breaks =c(2005:2023), expand = c(0.02,0.02)) +
+  scale_y_continuous(limits = c(0,5300), expand = c(0,0)) +
+  geom_hline(yintercept = median_annual, linetype = 2) +
+  theme_dark() +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
+  labs(fill ="Mean \n rainy season \n ONI") +
+  labs(caption = "Rainy season is defined as Apr-Nov. \n Monthly ONI value corresponds to 3-month 'season.' \n Neutral phase is defined as -0.5 to +0.5 ONI.",
+       title = "Annual rainfall and Oceanic Niño Index")
+  
+
+ONI_rain_plot
+
+ggsave("figures/rainfall_ONI_timeseries.png", plot = ONI_rain_plot, width = 9, height = 5)
+```
+
 
