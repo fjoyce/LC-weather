@@ -186,6 +186,21 @@ daily_rain_2023 <- LC_2023 %>%
   dplyr::mutate(JD = lubridate::yday(date))
 
 ```
+```{r}
+LC_2024 <- read_csv(here("data/2024/LC_weather_2024.csv")) 
+
+LC_2024 <- LC_2024 %>% 
+  mutate(date_time = mdy_hm(`Date and time of measurement`)) %>% 
+  mutate(date = lubridate::date(date_time)) %>% 
+  mutate(hour = lubridate::hour(date_time))
+  
+#summarize rainfall by day
+daily_rain_2024 <- LC_2024 %>% 
+  group_by(date) %>% 
+  summarize(daily_rain = sum(Rainfall)) %>% 
+  dplyr::mutate(year = lubridate::year(date)) %>% 
+  dplyr::mutate(JD = lubridate::yday(date))
+```
 
 
 
