@@ -380,7 +380,7 @@ cumulative_curves <-  ggplot(data = ytd,
 cumulative_curves
 
 #save figure to file. Note that because of the way Rmd handles filepaths, the filepath is relative to where the Rmd file is, not to the home directory. So this ends up in code/figures instead of just figures/
-ggsave("figures/combined_cumulative_2023.png", plot = cumulative_curves, width = 8, height = 5)
+ggsave("figures/combined_cumulative_2024.png", plot = cumulative_curves, width = 8, height = 5)
 ```
 
 ### Interactive version
