@@ -187,6 +187,9 @@ daily_rain_2023 <- LC_2023 %>%
 
 ```
 ```{r}
+
+# Note- this is not a complete year of data
+
 LC_2024 <- read_csv(here("data/2024/LC_weather_2024.csv")) 
 
 LC_2024 <- LC_2024 %>% 
@@ -201,6 +204,21 @@ daily_rain_2024 <- LC_2024 %>%
   dplyr::mutate(year = lubridate::year(date)) %>% 
   dplyr::mutate(JD = lubridate::yday(date))
 ```
+```{r}
+LC_2025 <- read_csv(here("data/2025/LC_weather_2025.csv"))
+
+LC_2025 <- LC_2025 %>% 
+  mutate(date_time = mdy_hm(`Date and time of measurement`)) %>% 
+  mutate(date = lubridate::date(date_time)) %>% 
+  mutate(hour = lubridate::hour(date_time))
+
+#summarize rainfall by day
+daily_rain_2025 <- LC_2025 %>% 
+  group_by(date) %>% 
+  summarize(daily_rain = sum(Rainfall)) %>% 
+  dplyr::mutate(year = lubridate::year(date)) %>% 
+  dplyr::mutate(JD = lubridate::yday(date))
+```
 
 
 
@@ -209,23 +227,23 @@ daily_rain_2024 <- LC_2024 %>%
 ```{r}
 
 #combine all individual data frames 2005 through 2022 into single data frame
-LC_daily_rain <- bind_rows(daily_rain_2005_2008, daily_rain_2008_2019, daily_rain_2020, daily_rain_2021, daily_rain_2022, daily_rain_2023, daily_rain_2024)
+LC_daily_rain <- bind_rows(daily_rain_2005_2008, daily_rain_2008_2019, daily_rain_2020, daily_rain_2021, daily_rain_2022, daily_rain_2023, daily_rain_2024, daily_rain_2025)
 
 #check for missing dates (entirely missing rows, not missing values)
 
 #create a sequence from start of date range to last date (i.e. no missing days)
-date_range <- seq(ymd('2005-01-01'),ymd('2024-06-30'), by = '1 day')
+date_range <- seq(ymd('2005-01-01'),ymd('2025-07-31'), by = '1 day')
 
 #not sure this is needed
 date_range <- as_date(date_range)
 
-#number of days there should be is 6847 (now 7091)
+#number of days there should be is 6847 (now 7517)
 length(date_range)
 
 #number of days there are: 6800 (now 7037)
 length(LC_daily_rain$date)
 
-# number of missing days = 54
+# number of missing days = 126 (Mostly Sep-Dec 2024)
 length(date_range)-length(LC_daily_rain$date)
 
 
@@ -234,12 +252,12 @@ length(date_range)-length(LC_daily_rain$date)
 (length(date_range)-length(LC_daily_rain$date))/length(date_range)*100
 
 #0.69% of days are missing
+#now 1.67%
 
 #find list of missing dates
 missing_dates <- as_date(setdiff(date_range, LC_daily_rain$date))
 
 #11 days missing from 2024-06-04 through 2024-06-14
-
 
 #note that there may be data gaps shorter than 24 hrs that won't be reflected in this list. The way the 15-min data are summarized, they get a daily value even if there was a single period
 
@@ -360,27 +378,32 @@ cumulative_curves <-  ggplot(data = ytd,
   #scale_x_date(date_labels = "%b", date_breaks = "months") +
   labs(
     title = "Annual cumulative precipitation",
-    subtitle = "Las Cruces 2005 to 2023",
+    subtitle = "Las Cruces 2005 to 2025",
     y = "Precipitation (mm)",
     x = "",
-    caption = "2005-2023"
+    caption = "2005-2025"
   ) +
   geom_text_repel(aes(x = JD + 20, y = cum_rain, label = year_label), direction = c("y"), hjust = 0) +
   scale_color_viridis() +
   #theme_bw() +
   theme(
+    #panel.background = element_rect(fill = "gray"), #solid gray background
     text = element_text(size = 15),
     axis.ticks.length.x = unit(0.5, "cm"),
     axis.text.x = element_text(vjust = 5.5,
                                hjust = -0.2)
-  ) 
+      
+  )
  
 
 #print
 cumulative_curves
 
 #save figure to file. Note that because of the way Rmd handles filepaths, the filepath is relative to where the Rmd file is, not to the home directory. So this ends up in code/figures instead of just figures/
-ggsave("figures/combined_cumulative_2024.png", plot = cumulative_curves, width = 8, height = 5)
+ggsave("figures/combined_cumulative_2025.png", 
+       plot = cumulative_curves, 
+       width = 8, 
+       height = 5)
 ```
 
 ### Interactive version
