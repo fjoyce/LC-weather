@@ -14,10 +14,10 @@ Coordinates:	8° 47' 7.27'' N, 82° 57' 32'' W
 Start date:	07/31/2008   
 Manufacturer:	Campbell Scientific    
 
-    - I downloaded the archived data for the historical data files:
-        - Historical Data  
-            - January, 1982 to December, 1985. File : LC_met_Jan05t_Jul08.csv (daily)
-            - January, 2005 to August, 2008. (Davis Station)  
+- I downloaded the archived data for the historical data files:
+  - Historical Data  
+    - January, 1982 to December, 1985. File : LC_met_Jan05t_Jul08.csv (daily)
+    - January, 2005 to August, 2008. (Davis Station)  
 
 - Rather than redownloading data, I obtained files for 2008-08 through 2020-06 from Leland Werden on 2021-02-15.
     -  datos_meteorologicos_LC_Aug08_Jun20.csv (15-min intervals)          
