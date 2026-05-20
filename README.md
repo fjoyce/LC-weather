@@ -26,6 +26,10 @@ Manufacturer:	Campbell Scientific
     - 2020: batches are in Las_Cruces_2020 subfolder; combined data are in LC_weather_2020.csv 
     - 2021: batches are in 2021 subfolder; combined data are in LC_weather_2021.csv
     - 2022: batches in 2022 subfolder; combined data are in LC_Weather_2022.csv (within that subfolder)
+    - 2023:
+    - 2024:
+    - 2025:
+    - 2026:
 
 ## Missing data  
 
