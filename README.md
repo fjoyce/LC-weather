@@ -14,10 +14,10 @@ Coordinates:	8° 47' 7.27'' N, 82° 57' 32'' W
 Start date:	07/31/2008   
 Manufacturer:	Campbell Scientific    
 
-    - I downloaded the archived data for the historical data files:
-        - Historical Data  
-            - January, 1982 to December, 1985. File : LC_met_Jan05t_Jul08.csv (daily)
-            - January, 2005 to August, 2008. (Davis Station)  
+- I downloaded the archived data for the historical data files:
+  - Historical Data  
+    - January, 1982 to December, 1985. File : LC_met_Jan05t_Jul08.csv (daily)
+    - January, 2005 to August, 2008. (Davis Station)  
 
 - Rather than redownloading data, I obtained files for 2008-08 through 2020-06 from Leland Werden on 2021-02-15.
     -  datos_meteorologicos_LC_Aug08_Jun20.csv (15-min intervals)          
@@ -26,6 +26,10 @@ Manufacturer:	Campbell Scientific
     - 2020: batches are in Las_Cruces_2020 subfolder; combined data are in LC_weather_2020.csv 
     - 2021: batches are in 2021 subfolder; combined data are in LC_weather_2021.csv
     - 2022: batches in 2022 subfolder; combined data are in LC_Weather_2022.csv (within that subfolder)
+    - 2023:
+    - 2024:
+    - 2025:
+    - 2026:
 
 ## Missing data  
 
