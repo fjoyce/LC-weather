@@ -19,6 +19,11 @@ library(here)
 library(magrittr)
 library(cowplot)
 
+library(rsoi)
+library(viridis)
+library(RColorBrewer)
+library(cowplot)
+
 #suppress summarize info from dplyr
 options(dplyr.summarise.inform = FALSE)
 ```
@@ -42,11 +47,11 @@ daily_rain_2005_2008 <- LC_2005_2008 %>%
 
 ```{r warning=FALSE, include=FALSE}
 
-#read in 15-min data from 2008- 2020
+# read in 15-min data from 2008- 2020
 LC_2008_2020 <- read.csv(here("data/datos_meteorologicos_LC_Aug08_Jun20.csv"), na.strings = "NA")
 
 
-#reformat dates
+# reformat dates
 LC_2008_2020 <- LC_2008_2020 %>%
   mutate(date = lubridate::dmy(LC_2008_2020$DATA_DATE2)) %>%
   mutate(year = lubridate::year(date)) %>%
@@ -56,16 +61,15 @@ LC_2008_2020 <- LC_2008_2020 %>%
   mutate(yr = as.factor(year)) %>%
   mutate(rainfall = as.character(RAIN_MM_TOT)) %>%
   mutate(rainfall = as.numeric(rainfall)) 
- #didn't work to go straight from factor to numeric so converted to character first
-  #na.omit #drops 13 cases with NAs
+ # didn't work to go straight from factor to numeric so converted to character first
+  # na.omit #drops 13 cases with NAs
 
 
-#summarize 2008-2020 rainfall by day
-#added n column to see how many rows there were for each day
-#15-min intervals: n = 96
-#30-min intervals: n = 48
-#n = some other value-> something is off
-
+# summarize 2008-2020 rainfall by day
+# added n column to see how many rows there were for each day
+# 15-min intervals: n = 96
+# 30-min intervals: n = 48
+# n = some other value means something is off
 
 LC_rain_2008_2020 <- LC_2008_2020 %>% 
   select(c(date, year, month, day, yr, rainfall)) %>%
@@ -83,16 +87,27 @@ daily_rain_2008_2019 <- LC_rain_2008_2020 %>%
 ```
 
 ```{r warning=FALSE}
-#Downloaded and read in 2020 data in 6 batches (each 2 months?)
+# Downloaded and read in 2020 data in 6 batches (each 2 months?)
 
+# Jan-Feb (leap year!)
 LC_2020A <- read.csv(here("data/Las_Cruces_2020/LC1.csv"))
+
+# Mar-Apr
 LC_2020B <- read.csv(here("data/Las_Cruces_2020/LC2.csv"))
+
+# May-Jun
 LC_2020C <- read.csv(here("data/Las_Cruces_2020/LC3.csv"))
+
+# Jul-Aug
 LC_2020D <- read.csv(here("data/Las_Cruces_2020/LC4.csv"))
+
+# Sep-Oct
 LC_2020E <- read.csv(here("data/Las_Cruces_2020/LC5.csv"))
+
+# Nov-Dec
 LC_2020F <- read.csv(here("data/Las_Cruces_2020/LC6.csv"))
 
-#combine 2020 batches into one dataframe
+# combine 2020 batches into one dataframe
 LC_2020 <- bind_rows(LC_2020A, 
                      LC_2020B, 
                      LC_2020C, 
@@ -100,15 +115,15 @@ LC_2020 <- bind_rows(LC_2020A,
                      LC_2020E, 
                      LC_2020F)
 
-#then clear individual batches from workspace
+# then clear individual batches from workspace
 rm(LC_2020A, LC_2020B, LC_2020C,
    LC_2020D, LC_2020E, LC_2020F)
 
-#clear out data frame with partial 2020 data
+# clear out data frame with partial 2020 data
 rm(LC_rain_2008_2020)
 
 
-#reformat 2020 dates (and PAR column name)
+# reformat 2020 dates (and PAR column name)
 LC_2020 <- LC_2020 %>% 
   mutate(date_time = lubridate::mdy_hm(Date.and.time.of.measurement)) %>% 
   mutate (PAR = Average.ps..active.Rad...) %>% 
@@ -116,23 +131,22 @@ LC_2020 <- LC_2020 %>%
   mutate(hour = lubridate::hour(date_time))
 
 
-#now summarize 2020 rainfall by day
+# now summarize 2020 rainfall by day
 daily_rain_2020 <- LC_2020 %>% 
   group_by(date) %>% 
   summarize(daily_rain = sum(Rainfall)) %>% 
   dplyr::mutate(year = lubridate::year(date)) %>% 
   dplyr::mutate(JD = lubridate::yday(date)) %>% 
-  drop_na() #somehow an NA row got in here (from one of the batches?), drop NA
+  drop_na() # somehow an NA row got in here (from one of the batches?), drop NA
 ```
 
 ```{r}
 
-#read in 2021 data (single csv)
-#note there seems to be a gap in the data between 2021-07-15 and 2021-07-24, partially inclusive
+# read in 2021 data (single csv)
+# note there seems to be a gap in the data between 2021-07-15 and 2021-07-24, partially inclusive
 LC_2021 <- read.csv(here("data/LC_weather_2021.csv"))
 
-
-#reformat dates
+# reformat dates
 LC_2021 <- LC_2021 %>% 
   mutate(date_time = lubridate::mdy_hm(Date.and.time.of.measurement)) %>% 
   mutate(date = lubridate::date(date_time)) %>% 
@@ -159,8 +173,6 @@ LC_2022 <- LC_2022 %>%
   mutate(date = lubridate::date(date_time)) %>% 
   mutate(hour = lubridate::hour(date_time))
 
-
-
 #summarize rainfall by day
 daily_rain_2022 <- LC_2022 %>% 
   group_by(date) %>% 
@@ -178,7 +190,7 @@ LC_2023 <- LC_2023 %>%
   mutate(date = lubridate::date(date_time)) %>% 
   mutate(hour = lubridate::hour(date_time))
   
-#summarize rainfall by day
+# summarize rainfall by day
 daily_rain_2023 <- LC_2023 %>% 
   group_by(date) %>% 
   summarize(daily_rain = sum(Rainfall)) %>% 
@@ -220,8 +232,6 @@ daily_rain_2025 <- LC_2025 %>%
   dplyr::mutate(JD = lubridate::yday(date))
 ```
 
-
-
 # Finding and fixing missing data 
 
 ```{r}
@@ -232,41 +242,40 @@ LC_daily_rain <- bind_rows(daily_rain_2005_2008, daily_rain_2008_2019, daily_rai
 #check for missing dates (entirely missing rows, not missing values)
 
 #create a sequence from start of date range to last date (i.e. no missing days)
-date_range <- seq(ymd('2005-01-01'),ymd('2025-07-31'), by = '1 day')
+date_range <- seq(ymd('2005-01-01'),ymd('2025-12-31'), by = '1 day')
 
 #not sure this is needed
 date_range <- as_date(date_range)
 
-#number of days there should be is 6847 (now 7517)
+#number of days there should be is 7533
 length(date_range)
 
 #number of days there are: 6800 (now 7037)
 length(LC_daily_rain$date)
 
-# number of missing days = 126 (Mostly Sep-Dec 2024)
+# number of missing days = 137 (Mostly Sep-Dec 2024)
 length(date_range)-length(LC_daily_rain$date)
 
-
-#calculate percentage of missing dates that are missing data entirely
+# calculate percentage of missing dates that are missing data entirely
 
 (length(date_range)-length(LC_daily_rain$date))/length(date_range)*100
 
-#0.69% of days are missing
-#now 1.67%
+# 0.69% of days are missing
+# now 1.79%
 
-#find list of missing dates
+# find list of missing dates
 missing_dates <- as_date(setdiff(date_range, LC_daily_rain$date))
 
-#11 days missing from 2024-06-04 through 2024-06-14
+# 11 days missing from 2024-06-04 through 2024-06-14
 
-#note that there may be data gaps shorter than 24 hrs that won't be reflected in this list. The way the 15-min data are summarized, they get a daily value even if there was a single period
+# note that there may be data gaps shorter than 24 hrs that won't be reflected in this list. The way the 15-min data are summarized, they get a daily value even if there was a single period
 
-#view(missing_dates)
+# view(missing_dates)
 
-#read in manually collected data [NOT COMPLETE]
-#note that manually collected data are recorded at 07:00, so they do not correspond cleanly to the 24 hr periods in the summarized daily data. For manually collected data, data on each recorded date are mostly from the previous day (07-24h, vs. 00-07h)
+# read in manually collected data [NOT COMPLETE]
+# note that manually collected data are recorded at 07:00, so they do not correspond cleanly to the 24 hr periods in the summarized daily data. For manually collected data, data on each recorded date are mostly from the previous day (07-24h, vs. 00-07h)
 
-#SO manually collected dates correspond to missing automated dates + 1 day
+# SO manually collected dates correspond to missing automated dates + 1 day
 
 ```
 
@@ -358,7 +367,7 @@ mean_cumulative_curve <- ggplot(data = ytd_mean,
 
 mean_cumulative_curve
 
-#create plot
+# create plot
 cumulative_curves <-  ggplot(data = ytd,
                              aes(
                                x = JD,
@@ -395,8 +404,7 @@ cumulative_curves <-  ggplot(data = ytd,
       
   )
  
-
-#print
+# print
 cumulative_curves
 
 #save figure to file. Note that because of the way Rmd handles filepaths, the filepath is relative to where the Rmd file is, not to the home directory. So this ends up in code/figures instead of just figures/
@@ -517,7 +525,7 @@ annual_rain_plot <-
   ylab("Precipitación anual (mm)") +
   xlab("Año") +
   geom_text(aes(label = annual_rainfall), vjust = -0.2)+
-  scale_x_continuous(breaks =c(2005:2023)) +
+  scale_x_continuous(breaks =c(2005:2025)) +
   scale_y_continuous(limits = c(0,5300), expand = c(0,0)) +
   geom_hline(yintercept = median_annual, linetype = 2) 
   
@@ -527,7 +535,7 @@ annual_rain_plot
 #ggsave("annual_rain_2005_2023.png", annual_rain_plot, width = 7, height = 5)
 ```
 
-##Low and high temperatures
+## Low and high temperatures
 
 ```{r}
 
@@ -562,9 +570,9 @@ thermal_envelope
 ```
 
 ```{r}
-#2023 monthly rain
+# 2023 monthly rain
 
-#monthly rain in 2023
+# monthly rain in 2023
 monthly_2023 <- daily_rain_2023 %>% 
    group_by(month = lubridate::floor_date(date, 'month')) %>% 
   summarize(monthly_rain = sum(daily_rain)) %>% 
@@ -572,8 +580,7 @@ monthly_2023 <- daily_rain_2023 %>%
   mutate(month_numeric = month(month, label = TRUE))
  
 
-#monthly rain in all years
-
+# monthly rain in all years
 monthly_rain <- ytd %>% 
   group_by(year, month = lubridate::floor_date(date, 'month')) %>% 
   summarize(monthly_rain = sum(daily_rain)) %>% 
@@ -592,52 +599,43 @@ monthly_rain_plot <- ggplot(data = monthly_rain, aes(x = month_numeric, y = medi
   labs(caption = "Points = median for 2005-2023, Bars = 2023 data")
 
   
-
 monthly_rain_plot
 
 ggsave("figures/monthly_median_vs_2023_rainfall.png", plot = monthly_rain_plot, width = 8, height = 5)
 ```
-##ENSO patterns 
+## ENSO patterns 
 
 ```{r}
-#let's see how annual rainfall compares to ENSO status
+# let's see how annual rainfall compares to ENSO status
 
-#use the rsoi package
-library(rsoi)
-library(viridis)
-library(RColorBrewer)
-library(cowplot)
+# (use the rsoi package)
 
 #download the ONI index (from NOAA?)
 download_oni(use_cache = FALSE, file = here("data/ONI/ONI.csv"))
 
-#read in
+# read in
 ONI <- read_csv(here("data/ONI/ONI.csv")) %>% 
   filter(Year > 2004) %>% 
   mutate(mon = lubridate::month(Date, label = TRUE))
 
 
-#annual ONI
-
+# annual ONI
 annual_ONI <- ONI %>% 
   group_by(Year) %>% 
   summarize(mean_ONI = mean(ONI, na.rm = TRUE)) %>% 
   ungroup()
 
-#rainy season ONI
-
+# rainy season ONI
 rainy_season_ONI <- ONI %>% 
   filter(! mon %in% c("Jan", "Feb", "Mar", "Dec")) %>% 
   group_by(Year) %>% 
   summarize(mean_ONI = mean(ONI)) %>%
   ungroup()
               
-
-
-#set limits to center the divergent color scale
+# set limits to center the divergent color scale
 limit <- c(-2.7, 2.7)
   
-#try plotting heatmap
+# try plotting heatmap
 p <-ggplot(ONI,aes(Year,mon,fill=ONI)) +
   geom_tile(color= "white") + 
   scale_fill_distiller(palette = "RdBu", limit = limit) +
@@ -647,14 +645,13 @@ p <-ggplot(ONI,aes(Year,mon,fill=ONI)) +
 p
 
 
-#redo annual rain with bars color coded by ENSO status
+# redo annual rain with bars color coded by ENSO status
 
-#first need to join annual average ONI values to rainfall df
+# first need to join annual average ONI values to rainfall df
 
 ONI_rain <- left_join(annual_rain, rainy_season_ONI, join_by(year == Year))
 
-
-annual_limit <- c(-1.7,1.7)
+annual_limit <- c(-2,2)
 
 ONI_rain_plot <-
   ggplot(data = ONI_rain, aes(
@@ -665,7 +662,7 @@ ONI_rain_plot <-
   ylab("Annual rainfall (mm)") +
   xlab("Year") +
   geom_text(aes(label = annual_rainfall), vjust = -0.2)+
-  scale_x_continuous(breaks =c(2005:2023), expand = c(0.02,0.02)) +
+  scale_x_continuous(breaks =c(2005:2025), expand = c(0.02,0.02)) +
   scale_y_continuous(limits = c(0,5300), expand = c(0,0)) +
   geom_hline(yintercept = median_annual, linetype = 2) +
   theme_dark() +
@@ -677,7 +674,7 @@ ONI_rain_plot <-
 
 ONI_rain_plot
 
-#ggsave("figures/rainfall_ONI_timeseries.png", plot = ONI_rain_plot, width = 9, height = 5)
+# ggsave("figures/rainfall_ONI_timeseries.png", plot = ONI_rain_plot, width = 9, height = 5)
 ```
 
 
