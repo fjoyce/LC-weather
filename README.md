@@ -32,7 +32,32 @@ Manufacturer:	Campbell Scientific
     - 2026:
 
 ## Missing data  
+ **Days fully missing**
+ 
+-  2006-09-02 and 2026-02-03 are missing from the 2005-2008 daily summaries
+-  2024:
+    -  November- only has data for 1-7 November 
+    -  December- no data
 
+**Missing 15-min interval**
+-  2008:
+    -  2008-08-01 to 2008-08-12 have fewer rows than expected
+    -  2008-10-24 and 2008-10-25 have fewer rows than expected
+-  2011:
+    -  2011-05-14 is missing one record
+-  2014:
+    -  2014-11-28 and 2014-11-29 have fiewer rows than expected
+-  2015:
+    -  2015-09-07 is missing one row
+-  2018:
+    -  2018-03-24, 2018-03-27, 2018-03-28
+    -  2018-04-03, 2018-04-29
+    -  2018-05-20
+    -  2020-06-18 
+-  2021:
+    -  2021-07-15 and 2021-07-24- gap in the data, partially inclusive    
+       
+       
 
 ## Loma Linda 
 
